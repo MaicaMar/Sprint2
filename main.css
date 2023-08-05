@@ -1,0 +1,274 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.button-color-blue {
+  background-color: #5265E1;
+  border: #5265E1;
+  text-decoration: none;
+  font-size: small;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container-hidden {
+  overflow: hidden;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  font-size: small;
+  letter-spacing: 2px;
+  border: 0;
+  border-bottom: none;
+}
+
+.login-button {
+  font-size: small;
+  letter-spacing: 2px;
+  width: 100px;
+  background-color: #FA5959;
+  border: #FA5959;
+  text-decoration: none;
+}
+
+.blue-box-shadow {
+  position: relative;
+  display: inline-block;
+}
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.blue-box-shadow::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  /*Ajusta la posición hacia arriba*/
+  left: 120px;
+  /*Ajusta la posición hacia la izquierda */
+  width: 80%;
+  height: 80%;
+  background-color: #5265E1;
+  /* Ajusta el color y la opacidad */
+  z-index: -1;
+  /* Colocamos el pseudo-elemento detrás del contenido de .blue-box-shadow */
+  border-bottom-left-radius: 85px;
+}
+
+.nav-link.active {
+  border: none;
+  border-bottom: 3px solid #FA5959;
+}
+
+.nav-link:hover {
+  border: none;
+  border-bottom: 3px solid #FA5959;
+}
+
+/* Para mantener el borde visible con el tab activo */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-bottom: 3px solid #FA5959;
+}
+
+.blue-box-left {
+  position: absolute;
+  background-color: #5265E1;
+  width: 89%;
+  height: 94%;
+  bottom: -20%;
+  left: -10%;
+  border-bottom-right-radius: 85px;
+  z-index: -1;
+}
+
+.tab-pane img {
+  width: 80%;
+}
+
+.card-body a {
+  font-size: small;
+  background-color: #5265E1;
+  border: #5265E1;
+  color: white;
+}
+
+.card-button {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.dots-line {
+  overflow: hidden;
+}
+
+.step-column1 {
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.step-column2 {
+  transform: translatey(10%);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.step-column3 {
+  transform: translatey(20%);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+/* Agrega una línea superior al primer elemento del acordeón */
+.accordion .accordion-item:first-child .accordion-button {
+  border-top: 1px solid #dee2e6; /* Color de la línea superior */
+}
+
+/* Agrega una línea inferior al último elemento del acordeón */
+.accordion .accordion-item:last-child .accordion-button {
+  border-bottom: 1px solid #dee2e6; /* Color de la línea inferior */
+}
+
+/* Cambiar el color del texto al pasar el mouse y al hacer clic */
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button.active {
+  color: #e68a00;
+  background-color: white;
+}
+
+/* Mantener el fondo blanco en todos los estados */
+.accordion-button {
+  background-color: white;
+}
+
+/* Eliminar el contorno azul en el estado :focus para los botones del acordeón */
+.accordion-button:not(.collapsed):focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Estilo predeterminado del texto */
+.accordion-button {
+  color: black;
+}
+
+footer {
+  background-color: #5265E1;
+}
+
+footer h6 {
+  font-size: small;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: white;
+  text-align: center;
+}
+
+/* Estilo para el texto del placeholder */
+::-moz-placeholder {
+  font-size: 12px; /* Ajusta el tamaño del texto del placeholder */
+}
+::placeholder {
+  font-size: 12px; /* Ajusta el tamaño del texto del placeholder */
+}
+
+.contact-button {
+  font-size: small;
+  width: 100px;
+  background-color: #FA5959;
+  border: #FA5959;
+  color: white;
+  text-decoration: none;
+}
+
+.ul-nav-bg {
+  background-color: #19376D;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  font-size: small;
+  letter-spacing: 2px;
+  border: 0;
+  border-bottom: none;
+}
+
+.img-bookmark {
+  width: 170px;
+  height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-bookmark {
+    width: 160px;
+    height: auto;
+  }
+  .blue-box-shadow::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    /*Ajusta la posición hacia arriba*/
+    left: 85px;
+    /*Ajusta la posición hacia la izquierda */
+    width: 80%;
+    height: 80%;
+    background-color: #5265E1;
+    /* Ajusta el color y la opacidad */
+    z-index: -1;
+    /* Colocamos el pseudo-elemento detrás del contenido de .blue-box-shadow */
+    border-bottom-left-radius: 80px;
+  }
+  .blue-box-left-custom-A {
+    position: absolute;
+    background-color: #5265E1;
+    width: 80%;
+    height: 65%;
+    bottom: 15%;
+    left: 5%;
+    border-bottom-right-radius: 85px;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .blue-box-left-custom-B {
+    position: absolute;
+    background-color: #5265E1;
+    width: 75%;
+    height: 75%;
+    bottom: -4%;
+    left: 5%;
+    border-bottom-right-radius: 85px;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .blue-box-left-custom-C {
+    position: absolute;
+    background-color: #5265E1;
+    width: 75%;
+    height: 80%;
+    bottom: 0;
+    left: 4%;
+    border-bottom-right-radius: 85px;
+    z-index: -1;
+  }
+  footer a {
+    font-size: extra-small;
+    letter-spacing: 1px;
+    border: 0;
+    border-bottom: none;
+  }
+  .icons {
+    width: 20px;
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
